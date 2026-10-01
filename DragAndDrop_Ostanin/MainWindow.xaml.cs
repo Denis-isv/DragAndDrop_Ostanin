@@ -20,5 +20,15 @@ namespace DragAndDrop_Ostanin
         {
             InitializeComponent();
         }
+
+        private void ImageUp(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void ImageDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

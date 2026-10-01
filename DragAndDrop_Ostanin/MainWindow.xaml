@@ -7,8 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
         MinWidth="800"
-        MinHeight="450">
+        MinHeight="450"
+        MouseUp="ImageUp">
     <Grid>
-        <Image x:Name="MainImage" Stretch="Uniform"/>
+        <Image 
+            MouseUp="ImageUp"
+            MouseDown="ImageDown"
+            x:Name="MainImage" Stretch="Uniform"/>
     </Grid>
 </Window>
