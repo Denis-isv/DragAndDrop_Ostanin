@@ -16,14 +16,19 @@
 
         <Border Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" 
                 BorderBrush="Gray" BorderThickness="1" Background="#1E1E1E" Margin="0,0,10,0">
-            <Grid>
-                <Image x:Name="image" Stretch="Uniform"/>
+            <Grid ClipToBounds="True">
+                <Image x:Name="image" Stretch="Uniform"
+                       SizeChanged="Image_SizeChanged"
+                       UseLayoutRounding="True"/>
+
                 <Canvas x:Name="overlay" Background="Transparent"
+                        HorizontalAlignment="Center" VerticalAlignment="Center"
                         MouseLeftButtonDown="Canvas_MouseLeftButtonDown"
                         MouseMove="Canvas_MouseMove"
-                        MouseLeftButtonUp="Canvas_MouseLeftButtonUp">
-                    <Border x:Name="cropRect" BorderBrush="White" BorderThickness="2" 
-                            Background="#40FFFFFF" Visibility="Collapsed"/>
+                        MouseLeftButtonUp="Canvas_MouseLeftButtonUp"
+                        MouseRightButtonDown="Canvas_MouseRightButtonDown">
+                    <Border x:Name="cropRect" BorderBrush="White" BorderThickness="2"
+                            Background="white" Visibility="Collapsed"/>
                 </Canvas>
             </Grid>
         </Border>
