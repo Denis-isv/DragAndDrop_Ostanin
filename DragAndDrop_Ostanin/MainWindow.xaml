@@ -5,14 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DragAndDrop_Ostanin"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
-        MinWidth="800"
-        MinHeight="450"
-        MouseUp="ImageUp">
+        Title="MainWindow" Height="450" Width="800" MinHeight="450" MinWidth="800" MouseUp="image_MouseUp">
     <Grid>
-        <Image 
-            MouseUp="ImageUp"
-            MouseDown="ImageDown"
-            x:Name="MainImage" Stretch="Uniform"/>
+        <Image x:Name="image" MouseUp="image_MouseUp" MouseDown="Image_MouseDown" Source="\Image\1.jpg"  
+        Width="50" Height="50" Margin="68,84,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" />
     </Grid>
 </Window>
